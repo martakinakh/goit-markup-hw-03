@@ -44,7 +44,7 @@ img {
 }
 
 .container {
-  /* outline: 1px solid tomato; */
+  outline: 1px solid tomato;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
