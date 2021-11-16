@@ -16,9 +16,12 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #212121;
   background-color: var(--body-main-color);
+
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -29,7 +32,30 @@ body {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  outline: 1px solid tomato;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ------------------ HEADER ------------------ */
+header {
+  background-color: var(--bgc-main-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+}
 
 .header-logo {
   font-family: Raleway;
@@ -38,6 +64,10 @@ body {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 93px;
 }
 
 .studio {
@@ -50,6 +80,21 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+.header-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link:hover,
@@ -69,15 +114,33 @@ body {
   color: var(--second-text-color);
 }
 
+.header-contact-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+
+  display: flex;
+  margin-left: auto;
+}
+
 .header-contact:hover,
 :focus {
   color: var(--accent-color);
 }
 
+.header-mail {
+  margin-right: 50px;
+}
+
 /* ------------------- MAIN ------------------- */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--bgc-second-color);
+
+  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-subject {
@@ -88,20 +151,32 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-title-color);
+
+  margin: 0 auto;
+  width: 696px;
+  margin-bottom: 30px;
 }
 
 .hero-button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
-  display: flex;
+  line-height: 1.95;
+
+  display: inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--second-btn-color);
   background-color: var(--accent-color);
   cursor: pointer;
+
+  border-radius: 4px;
+  border: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  padding: 10px 32px;
 }
 
 .hero-button:hover,
@@ -109,20 +184,51 @@ body {
   border-color: var(--second-btn-bgr-color);
 }
 
+.hero-section {
+  background-color: var(--bgc-main-color);
+}
+
+.hero-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  display: flex;
+}
+
+.hero-item {
+  width: 270px;
+}
+
+.hero-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .hero-pre-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 270px;
 }
 
 .hero-after-title {
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 270px;
 }
 
 .about-title {
@@ -132,6 +238,15 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.about-list {
+  margin-top: 0px;
+  margin-bottom: 94px;
+  padding-left: 0px;
 }
 
 .about-team {
@@ -145,23 +260,41 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.team-img {
+  margin-bottom: 30px;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
 }
 
 /* ------------------ PORTFOLIO ------------------ */
@@ -177,24 +310,61 @@ body {
   overflow: hidden;
 }
 
+.portfolio-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+
+  display: flex;
+  align-items: center;
+}
+
 .portfolio-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+
+  margin-bottom: 0px;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button-item {
   background-color: var(--bgc-third-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: 0px;
 }
 
 .button-item:hover,
-:focus :active {
+:focus,
+:active {
   color: var(--second-btn-color);
   background-color: var(--accent-color);
+}
+
+.gallery-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.gallery-item {
+  margin-bottom: 30px;
+}
+
+.gallery-item:nth-child(n + 7) {
+  margin-bottom: 0px;
+}
+
+.gallery-img {
+  margin-bottom: 20px;
 }
 
 .gallery-title {
@@ -203,6 +373,11 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
+
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .gallery-text {
@@ -210,23 +385,76 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
 
 /* ------------------ FOOTER ------------------ */
 
 .footer-section {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.footer-studio {
+  color: var(--second-title-color);
+}
+
+.adress-list {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .adress-main-link {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+
+  margin-bottom: 9px;
 }
 
-.adress-link {
+.adress-main-link:hover,
+:focus {
+  color: var(--accent-color);
+}
+
+.adress-link-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--fours-text-color);
+
+  margin-bottom: 9px;
+}
+
+.adress-link-mail:hover,
+:focus {
+  color: var(--accent-color);
+}
+
+.adress-link-tel {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -234,6 +462,7 @@ body {
   color: var(--fours-text-color);
 }
 
-.adress.item:hover {
+.adress-link-tel:hover,
+:focus {
   color: var(--accent-color);
 }
