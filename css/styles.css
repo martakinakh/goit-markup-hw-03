@@ -44,7 +44,6 @@ img {
 }
 
 .container {
-  outline: 1px solid tomato;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -237,6 +236,10 @@ header {
   width: 270px;
 }
 
+.about {
+  padding-bottom: 94px;
+}
+
 .about-title {
   font-weight: 700;
   font-size: 36px;
@@ -405,6 +408,10 @@ header {
   margin-bottom: 0px;
 }
 
+.gallery-link {
+  display: block;
+}
+
 .gallery-img {
   margin-bottom: 20px;
 }
@@ -444,13 +451,16 @@ header {
 }
 
 .footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.9;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-bottom: 20px;
 }
 
 .footer-studio {
@@ -463,6 +473,10 @@ header {
   margin-bottom: 0px;
 }
 
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .adress-main-link {
   font-style: normal;
   font-weight: 400;
@@ -470,8 +484,6 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-
-  margin-bottom: 9px;
 }
 
 .adress-main-link:hover,
@@ -486,8 +498,6 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--fours-text-color);
-
-  margin-bottom: 9px;
 }
 
 .adress-link-mail:hover,
