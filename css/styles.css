@@ -461,6 +461,7 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  display: inline-block;
 }
 
 .footer-studio {
